@@ -65,5 +65,8 @@ def words():
     data = 'templates/data.js'
     return render_template('bubbles.html', data=data)
 
+if __name__ == "__main__":
+    app.run()
+
 
 
