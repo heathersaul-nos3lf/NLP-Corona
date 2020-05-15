@@ -15,7 +15,8 @@ function handleClick() {
   const start = dateFns.startOfWeek(weekday).toISOString().split("T")[0];
   const end = dateFns.endOfWeek(weekday).toISOString().split("T")[0];
 
-  const url = "/xyz";
+  const url =
+    "https://raw.githubusercontent.com/heathersaul-nos3lf/NLP-Corona/master/sharesdata.json";
 
   d3.json(url).then(function (data) {
     let stories = [];
